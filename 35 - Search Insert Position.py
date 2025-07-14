@@ -3,8 +3,7 @@ def search_insert(nums, target):
     right = len(nums) - 1
     # We start searching for the target from the middle,
     # which is why we need both the left and right sides of the sorted array.
-    # If the array wasn't sorted, we would need to sort it,
-    # because binary search doesn't work on an unsorted array.
+    # If the array wasn't sorted, we need to use more complex result.
 
     while left <= right:  # the loop stops when left passes right (search exhausted)
         mid = (left + right) // 2  # calculate the middle index
